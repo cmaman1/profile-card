@@ -1,1 +1,125 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  background: url(../images/bg-pattern-top.svg) top left no-repeat, url(../images/bg-pattern-bottom.svg) bottom right no-repeat;
+  background-size: 300px;
+  background-color: #19a1ad;
+}
+
+body .main-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main-container .card {
+  width: 350px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 50px;
+  -webkit-box-shadow: 10px 10px 100px -20px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 100px -20px rgba(0, 0, 0, 0.75);
+}
+
+body .main-container .card .card-header {
+  background: url("../images/bg-pattern-card.svg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  border-radius: 20px 20px 0 0;
+}
+
+body .main-container .card .card-body {
+  position: relative;
+}
+
+body .main-container .card .card-body img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+body .main-container .card .card-body .card-information {
+  padding-top: 80px;
+}
+
+body .main-container .card .card-body .card-information h1 {
+  font-size: 1.2rem;
+  display: inline;
+}
+
+body .main-container .card .card-body .card-information span {
+  margin: 5px;
+}
+
+body .main-container .card .card-body .card-information .age {
+  font-size: 1.25rem;
+  display: inline;
+}
+
+body .main-container .card .card-body .card-information p {
+  margin: 10px 0 30px 0;
+}
+
+body .main-container .card hr {
+  margin-bottom: 30px;
+}
+
+body .main-container .card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 20px;
+  padding-bottom: 30px;
+}
+
+body .main-container .card .card-footer p:first-child {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+body .main-container .card .card-footer p:nth-child(2) {
+  font-size: 0.7rem;
+}
+
+body .attribution {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (min-width: 376px) {
+  body {
+    background-size: 550px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
